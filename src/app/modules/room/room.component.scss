@@ -1,0 +1,22 @@
+.wrapper {
+    .description,
+    .details {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(0, 0, 0, .12);
+        padding: 1%;
+        box-sizing: border-box;
+    }
+    .description {
+        flex: .3;
+    }
+    .details {
+        flex: .7;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .wrapper {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,5 @@
+<mat-chip-list>
+  <ng-container *ngFor="let option of hotelOptions">
+    <mat-chip (click)="selected(option)" [ngClass]="{'selected':(option.isSelected)?true:false}">{{option.title}}</mat-chip>
+  </ng-container>
+</mat-chip-list>

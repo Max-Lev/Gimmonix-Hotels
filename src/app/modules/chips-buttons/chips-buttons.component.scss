@@ -1,0 +1,14 @@
+:host {
+    mat-chip.mat-chip.mat-primary {
+        margin: 1%;
+        background-color: transparent;
+        border: 1px solid orange;
+        transition: all 1s ease;
+        &.selected {
+            background: #9C27B0;
+            border: 1px solid rgba(0, 0, 0, .12);
+            color: orange;
+            transition: all 1s ease;
+        }
+    }
+}

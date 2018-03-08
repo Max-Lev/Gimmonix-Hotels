@@ -1,0 +1,26 @@
+.suc {
+    background-color: green;
+}
+
+.fail {
+    background-color: red;
+}
+
+.box {
+    width: 30%;
+    height: 100px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 5%;
+    border: 1px dashed black;
+    box-sizing: border-box;
+}
+
+.box:last-of-type {
+    margin-right: 0;
+}
+
+button {
+    width: 80%;
+    margin-left: 10%;
+}

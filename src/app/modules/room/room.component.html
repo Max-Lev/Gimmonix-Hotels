@@ -1,0 +1,6 @@
+<ng-container>
+  <ng-container *ngFor="let room of roomsOptions">
+    <app-description [title]="room.title" [description]="room.description" class="description"></app-description>
+    <app-details [details]="room.details" class="details"></app-details>
+  </ng-container>
+</ng-container>

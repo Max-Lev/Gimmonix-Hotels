@@ -1,0 +1,37 @@
+<div class="buttons-section">
+  <h3>I. Move "buttons-section" to a page of it's own.</h3>
+  <ol>
+    <li>Add routing to "buttons-section"</li>
+    <li>Link to menu</li>
+  </ol>
+
+  <button (click)="start()" [ngClass]="{'suc':p4Result, 'fail':p4Result === false}">
+    <h1>Start</h1>
+  </button>
+  <div>
+    <div class="box" [ngClass]="{'suc':p1Result, 'fail':p1Result === false}">1</div>
+    <div class="box" [ngClass]="{'suc':p2Result, 'fail':p2Result === false}">2</div>
+    <div class="box" [ngClass]="{'suc':p3Result, 'fail':p3Result === false}">3</div>
+  </div>
+
+  <br/>
+  <br/>
+  <h3>II. Describe what this little program does (program inside "buttons-section").</h3>
+  <div>Description goes here____
+    <p>
+      1. program call task function after all promises (1-3) are resolved. 2.task function: generates random number every 1s. If
+      random number modulu 2 divided equally, that promise returns true, else false. 3.If promise resolved with true, using
+      css class 'suc' (green), else 'fail' (red). 4. If all promises true, start button is 'suc' and program stopes. if one
+      of promises false, program starts from begining.
+    </p>
+  </div>
+
+  <br/>
+  <br/>
+  <h3>III. Explain why the ".box" elements are not fitting in the same line. Fix the issue without changing the css</h3>
+  <div>Explanation goes here____
+    <p>
+      1. The reason that boxes do not fit on a same row, they got margin-right:5% and 3 boxes * 30% width, exceeds 100% width...
+    </p>
+  </div>
+</div>
